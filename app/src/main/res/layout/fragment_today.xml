@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.TodayFragment"
+    android:background="@color/colorBackground">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <com.yuan.waveview.WaveView
+        android:id="@+id/waveView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:backgroudColor="@color/colorMoreLayout"
+        app:progressColor="@color/colorWaveView" />
+
+
+    <TextView
+        android:id="@+id/target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50dp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/number"
+        android:layout_margin="30dp"
+        android:text="@string/text_steps"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonSwitch"
+        android:textOff="@string/switch_OFF"
+        android:textOn="@string/switch_ON"
+        android:textSize="18dp"
+        android:textColor="@color/colorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/custom_switch_button"
+        />
+
+
+    <ImageView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_distance"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="55dp"/>
+
+    <ImageView
+        android:id="@+id/fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_calories"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/stopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_stopwatch1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"/>
+
+    <TextView
+        android:id="@+id/distanceValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="40dp"
+        android:textAlignment="center"
+        android:text="0.00"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:id="@+id/fireValues"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:textAlignment="center"
+        android:text="0.0"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        />
+
+    <Chronometer
+        android:id="@+id/stopwatchValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="60dp"
+        android:text="@string/text_km"
+        android:textColor="#aad7d7d7"
+        android:textSize="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:text="@string/text_kcal"
+        android:textColor="#aad7d7d7"
+        android:textSize="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:textAlignment="center"
+        android:text="@string/text_walking_time"
+        android:textColor="#aad7d7d7"
+        android:textSize="10dp"
+        />
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/buttonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        app:menu_fab_label=""
+        app:menu_colorNormal="@color/colorAccent"
+        app:menu_openDirection="down"
+        app:menu_backgroundColor="@color/colorBackgroundActionButton"
+        app:menu_labels_colorNormal="@color/colorBackgroundActionButton"
+        >
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/buttonTurnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shutdown1"
+            app:fab_label="@string/text_closeapp"
+            app:fab_colorNormal="@color/colorTurnOff"
+            app:fab_size="normal"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/buttonRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_refresh"
+            app:fab_label="@string/text_refresh"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_size="normal"
+            />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/buttonHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_history"
+            app:fab_label="@string/text_history"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_size="normal" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/buttonAchievements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_achievements"
+            app:fab_label="@string/text_achievements"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_size="normal" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>

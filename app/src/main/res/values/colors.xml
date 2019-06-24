@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#24406c</color>
+    <color name="colorPrimaryDark">#24406c</color>
+    <color name="colorAccent">#3DD9D6</color>
+    <color name="colorWaveView">#3DD9D6</color>
+
+    <color name="colorBackground">#232323</color>
+    <color name="colorBackgroundWaveView">#9E4D4C4C</color>
+    <color name="colorBackgroundActionButton">#00ffffff</color>
+    <color name="colorTurnOff">#d60101</color>
+    <color name="colorTitle">#ffffff</color>
+    <color name="colorText">#84ffffff</color>
+
+    <color name="colorMoreLayout">#DC444444</color>
+</resources>

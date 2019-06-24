@@ -1,0 +1,46 @@
+<resources>
+    <!-- ===============================Tab_TODAY====================================== -->
+    <string name="app_name">Pedometer_And_Calorimeter</string>
+    <string name="tab_text_1">TODAY</string>
+    <string name="tab_text_2">REPORT</string>
+    <string name="tab_text_3">ADD</string>
+    <string name="text_goal">Goal: </string>
+    <string name="text_steps">Steps</string>
+    <string name="switch_ON">"     " RESUME</string>
+    <string name="switch_OFF">"     " START</string>
+    <string name="text_km">Km</string>
+    <string name="text_kcal">Kcal</string>
+    <string name="text_walking_time">Walking time</string>
+    <!-- Floating action button -->
+    <string name="text_achievements">Achievements</string>
+    <string name="text_history">History</string>
+    <string name="text_refresh">Refresh</string>
+    <string name="text_closeapp">Close app</string>
+
+    <!-- ===============================Tab_ADD====================================== -->
+    <string name="text_step_goal">Step goal</string>
+    <string name="text_sensitivity">Sensitivity</string>
+    <string name="text_sensitivity_note">High sensitivity means small movements will be counted as steps</string>
+    <string name="text_sensitivity_value_low">Low</string>
+    <string name="text_sensitivity_value_medium">Medium</string>
+    <string name="text_sensitivity_value_high">High</string>
+    <string name="text_weight">Weight</string>
+    <string name="text_weight_note">Necessary to calculate calories</string>
+    <string name="text_gender">Gender</string>
+    <string name="text_gender_note">Stride length calculation needs it</string>
+    <string name="text_gender_value_male">Male</string>
+    <string name="text_gender_value_female">Female</string>
+    <string name="text_step_length">Step length</string>
+    <string name="text_step_length_note">Distance &amp; speed calculation needs it</string>
+    <string name="text_first_day">First day of week</string>
+    <string name="text_first_day_monday">Monday</string>
+    <string name="text_first_day_sunday">Sunday</string>
+    <string name="text_first_day_saturday">Saturday</string>
+    <string name="text_guide">Guide</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textview" />
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

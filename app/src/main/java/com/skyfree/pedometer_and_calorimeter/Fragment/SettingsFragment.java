@@ -1,12 +1,11 @@
 package com.skyfree.pedometer_and_calorimeter.Fragment;
 
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,10 +13,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
-import android.widget.Toast;
+
 import com.skyfree.pedometer_and_calorimeter.Key;
 import com.skyfree.pedometer_and_calorimeter.R;
-import com.skyfree.pedometer_and_calorimeter.StepLength;
+import com.skyfree.pedometer_and_calorimeter.StepLengths;
 
 
 import java.util.ArrayList;
@@ -161,7 +160,8 @@ public class SettingsFragment extends Fragment {
         rlStepLength.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), StepLength.class);
+                Log.v("AAAA","rlStepLength");
+                Intent intent = new Intent(getActivity(), StepLengths.class);
                 startActivity(intent);
             }
         });
